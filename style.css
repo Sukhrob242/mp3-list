@@ -41,7 +41,7 @@ body{
 .image-container img{
     width: 200px;
     height: 200px;
-    padding:65px;
+    padding:10px;
     border-radius: 50%;
     object-fit: cover;
     background-color: #Fff;
@@ -53,4 +53,58 @@ body{
     inset 0px 0px 4px rgba(255, 255, 255,.2);
     animation: rotate 3s linear infinite;
     animation-play-state: paused;
+    animation: circle 3s linear infinite;
+    animation-play-state: paused;
+}
+.progress_box{
+    background-color: rgb(35, 93, 210);
+    border-radius: 5px;
+    width: 100%;
+    height: 4px;
+    margin: 40px 0 25px;
+}
+.progress_box .progress{
+    background-color: #fff;
+    height: 100%;
+    width: 0;
+    transition: 0.1 linear;
+}
+.navigation{
+    text-align: center;
+}
+.btn{
+    
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 10px;
+    background-color: rgb(46, 132, 202);
+    color: #8399b4;
+    font-size: 1rem;
+    font-weight: 700;
+    /* box-shadow: 7px -7px 14px #cbced1,
+    -7px 7px 14px #fff; */
+    border-radius: 97px;
+    background: #fafafa;
+    box-shadow:  20px 20px 18px #dadada,
+             10px 10px 18px #ffffff;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:nth-child(2){
+    background-color: #576ae3;
+    color: #fff;
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
