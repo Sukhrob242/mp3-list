@@ -56,6 +56,12 @@ body{
     animation: circle 3s linear infinite;
     animation-play-state: paused;
 }
+
+.audio-container.play .image-container img{
+    animation-play-state: running;
+    
+}
+
 .progress_box{
     background-color: rgb(35, 93, 210);
     border-radius: 5px;
